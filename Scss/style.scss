@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "./variables";
+
+main {
+    text-align: center;
+    min-height: 100vh;
+    min-width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: $whitClr;
+}
+
+
+
+
+.input-section {
+   display: flex;
+   padding: 15px 20px;
+   text-align: start;
+   flex-direction: column;
+   min-height: 150px;
+   max-width: 400px;
+   border: 2px solid $greenClr;
+
+   input, 
+   button {
+    max-width: 100%;
+   }
+
+   button {
+    margin-top: 20px;
+    padding: 5px 15px;
+    max-width: 100px;
+    color: $greenClr;
+   }
+
+   .input {
+    margin-top: 15px;
+    max-width: 275px;
+    padding: 5px 0;
+    border: 2px solid $greenClr;
+    outline: none;
+    background-color: $whitClr;
+    color: black;
+   }
+}
+
+
+
+
+
+
+
+
+
+.budget-statement {
+    margin-top: 1em;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    row-gap: 1em;
+    img {
+        height: 100px;
+        width: 150px;
+    }
+    
+    .balance-txt,
+    .budget-txt {
+        color: $greenClr;
+    }
+
+    .expense-txt {
+        color: $redClr;
+    }
+
+
+}
