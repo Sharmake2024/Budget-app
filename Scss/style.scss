@@ -19,6 +19,7 @@ main {
 
 
 .input-section {
+    margin-top: 2rem;
    display: flex;
    padding: 15px 20px;
    text-align: start;
@@ -80,4 +81,36 @@ main {
     }
 
 
+
+
+}
+
+
+/* expense-section */
+
+
+.expense-section {
+    @extend .input-section;
+    border: 2px solid $redClr;
+}
+
+
+
+
+
+.pop-up {
+    border: 2px solid $redClr;
+    display: none;
+    color:  white;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1rem 0;
+    background-color: rgb(255, 184, 184);
+
+}
+
+
+.pop-up-2 {
+    @extend .pop-up;
 }

@@ -11,7 +11,9 @@
         <h1>BUDGET APP</h1>
 
         <section class="budget-section">
-    
+            <div class="pop-up">
+                <p> Your input amount is empty</p>
+            </div>
             <div class="input-section">
                 <p>Please Enter Your Budget</p>
                 <input type="number" class="input">
@@ -21,19 +23,53 @@
                     <div class="info">
                         <p> BUDGET</p>
                         <img src="/assets/dollar-note-icon.svg" alt=" dollar-note-icon">
-                        <h2 class="budget-txt">$7000</h2>
+                        <h2 class="budget-txt">0</h2>
                     </div>
                     <div class="info">
                         <p> EXPENSES</p>
                         <img src="/assets/debit-card-icon.svg" alt=" dollar-note-icon">
-                        <h2 class="expense-txt">$200</h2>
+                        <h2 class="expense-txt">0</h2>
                     </div>
                     <div class="info">
                         <p> BALANCE</p>
                         <img src="/assets/saving-icon.svg" alt=" dollar-note-icon">
-                        <h2 class="balance-txt">$6800</h2>
+                        <h2 class="balance-txt">0</h2>
                     </div>
                 </div>
+        </section>
+
+        <section class="expense-section">
+            <div class="pop-up-2">
+                <p> hello world</p>
+            </div>
+            <div class="user-input-section">
+                <p> Please Enter Your Expense</p>
+                <input type="text"  class="inputOne">
+                <p>Please Enter Expense Amount</p>
+                <input type="number"  class="inputTwo">
+                <button id="ExpenseBtn">Add Expense</button>
+            </div>
+
+            <div class="info">
+                <div class="split">
+                        <div class="expense-div">
+                            <p>Expense Title</p>
+                            <li>car</li>
+                          
+                        </div>
+                        <div class="value-div">
+                            <p>Expense Value</p>
+                            <li>100</li>
+                           
+                        </div>
+                        <div class="buttons">
+                            <img src="/assets/recycle-bin-icon.svg"  class="delet-btn">
+                            <img src="/assets/" alt="">
+
+                        </div>
+                </div>
+            </div>
+
         </section>
 
     </main>
