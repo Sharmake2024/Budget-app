@@ -9,6 +9,7 @@ const Calculate = ()=> {
             let balance_txt = document.querySelector('.balance-txt');
             // const budgetSection = document.querySelector(".budget-section p");
             let expenseValue = document.querySelector('.value-div li');
+            let money = null;
             Btn.addEventListener("click", ()=> {
                 if( input.value === "") {
                     PopUp.style.display = "block";
@@ -18,8 +19,10 @@ const Calculate = ()=> {
 
                 }
                 else {
-                    budge_txt.textContent = input.value;
-                    balance_txt.textContent = input.value;
+                    money = input.value;
+                    budge_txt.textContent = money;
+                    balance_txt.innerText = money - expense_txt.innerText;
+            
     
                 }
 
@@ -50,13 +53,16 @@ const Calculate = ()=> {
                     },4000);
                 } 
                 else {
-                    let expenseTitle = document.querySelector(".expense-div li");
-                    let expenseValue = document.querySelector(".value-div li");
-    
-                    expenseTitle.textContent = inputOne.value;
-                    expenseValue.textContent = inputTwo.value
-                    expense_txt.textContent =   inputTwo.value;
-                    
+                    let ExpenseTitle = document.querySelector(".expense-div li");
+                    let ExpenseAmount = document.querySelector(".value-div li");
+                    let newMoney = parseInt(budge_txt.innerText) - parseInt(inputTwo.value);
+                    balance_txt.textContent = newMoney;
+                    expense_txt.textContent = inputTwo.value;
+                        ExpenseAmount.textContent = inputTwo.value;
+                    ExpenseTitle.textContent = inputOne.value;
+                
+
+                   
                     
                 }
 
